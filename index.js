@@ -1,3 +1,4 @@
+// bring in all the required libraries 
 const Manager = require("./lib/Manager.js");
 const Engineer = require("./lib/Engineer.js");
 const Intern = require("./lib/Intern.js");
@@ -14,6 +15,7 @@ teamArray = [];
 
 function runApp () {
 
+  //create team 
   function createTeam () {
     inquirer.prompt([{
       type: "list",
