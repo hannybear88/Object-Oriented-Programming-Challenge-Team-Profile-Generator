@@ -52,37 +52,45 @@ describe("Intern", () => {
             const id = 922;
             const email = "shikamaru@gmail.com";
             const school = "UCSD";
+            
             // create the case
             const shikamaru = new Intern(name, id, email, school);
             const result = shikamaru.getEmail();
+            
             // make assertion
             expect(result).toEqual(shikamaru.email);
         });
     });
     describe("getSchool", () => {
         it("should return the value of the property 'school'", () => {
+            
             // data setup
             const name = "Shikamaru";
             const id = 922;
             const email = "shikamaru@gmail.com";
             const school = "UCSD";
+            
             // create the case
             const shikamaru = new Intern(name, id, email, school);
             const result = shikamaru.getSchool();
+            
             // make assertion
             expect(result).toEqual(shikamaru.school);
         });
     });
     describe("getRole", () => {
         it("should return 'Intern'", () => {
+            
             // data setup
             const name = "Shikamaru";
             const id = 922;
             const email = "shikamaru@gmail.com";
             const school = "UCSD";
+            
             // create the case
             const shikamaru = new Intern(name, id, email, school);
             const result = shikamaru.getRole();
+            
             // make assertion
             expect(result).toEqual("Intern");
         });
