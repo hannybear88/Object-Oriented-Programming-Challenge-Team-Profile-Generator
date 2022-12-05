@@ -47,25 +47,29 @@ function addManager() {
     {
       type: "input",
       name: "managerName",
-      message: "What is the manager's name?"
+      message: "What is the manager's name?",
+      validate: validateRequired
     },
 
     {
       type: "input",
       name: "managerId",
-      message: "What is the manager's employee ID number?"
+      message: "What is the manager's employee ID number?",
+      validate: validateRequiredNumber
     },
 
     {
       type: "input",
       name: "managerEmail",
-      message: "What is the manager's email address?"
+      message: "What is the manager's email address?",
+      validate: validateRequiredEmail
     },
 
     {
       type: "input",
       name: "managerOfficeNumber",
-      message: "What is the manager's office number?"
+      message: "What is the manager's office number?",
+      validate: validateRequiredNumber
     }
 
   ]).then(answers => {
@@ -83,25 +87,30 @@ function addEngineer() {
       {
         type: "input",
         name: "engineerName",
-        message: "What is the engineer's name?"
+        message: "What is the engineer's name?",
+        validate: validateRequired
+       
       },
 
       {
         type: "input",
         name: "engineerId",
-        message: "What is the engineer's employee ID number?" 
+        message: "What is the engineer's employee ID number?",
+        validate: validateRequiredNumber
       },
 
       {
         type: "input",
         name: "engineerEmail",
-        message: "What is the engineer's email address?"
+        message: "What is the engineer's email address?",
+        validate: validateRequiredEmail
       },
 
       {
         type: "input",
         name: "engineerGithub",
-        message: "What is the engineer's GitHub username?"
+        message: "What is the engineer's GitHub username?",
+        validate: validateRequired
       }
 
     ]).then(answers => {
@@ -118,25 +127,29 @@ function addEngineer() {
       {
         type: "input",
         name: "internName",
-        message: "What is the intern's name?"
+        message: "What is the intern's name?",
+        validate: validateRequired
       },
 
       {
         type: "input",
         name: "internId",
-        message: "What is the intern's employee ID number?" 
+        message: "What is the intern's employee ID number?",
+        validate: validateRequiredNumber
       },
 
       {
         type: "input",
         name: "internEmail",
-        message: "What is the intern's email address?"
+        message: "What is the intern's email address?",
+        validate: validateRequiredEmail
       },
 
       {
         type: "input",
         name: "internSchool",
-        message: "What school does the intern attend?"
+        message: "What school does the intern attend?",
+        validate: validateRequired
       }
 
     ]).then(answers => {
@@ -158,7 +171,7 @@ function addEngineer() {
 function htmlBuilder () {
     console.log("Team created!")
 
-    fs.writeFileSync(outputPath, generateTeam(teamArray), "UTF-8")
+    fs.writeFileSync(distPath, generateTeam(teamArray), "UTF-8")
 
 }
 
