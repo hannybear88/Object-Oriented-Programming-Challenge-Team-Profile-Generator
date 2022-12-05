@@ -14,7 +14,10 @@ teamArray = [];
 
 
 function runApp () {
-
+  console.log(chalk.green("******************************************"));
+  console.log(chalk.green("* Welcome to the Team Profile Generator! *"));
+  console.log(chalk.green("******************************************"));
+  console.log(chalk.green("Let's go ahead and build your team!:"));
   //create team 
   function createTeam () {
     inquirer.prompt([{
@@ -42,6 +45,9 @@ function runApp () {
 // OOP Functions
 
 function addManager() {
+  console.log(chalk.yellow("==========="));
+  console.log(chalk.yellow("   Manager "));
+  console.log(chalk.yellow("==========="));
   inquirer.prompt ([
     
     {
@@ -82,6 +88,9 @@ function addManager() {
 
 
 function addEngineer() {
+  console.log(chalk.blue("============="));
+    console.log(chalk.blue("   Engineer  "));
+    console.log(chalk.blue("============="));
     inquirer.prompt([
       
       {
@@ -122,6 +131,9 @@ function addEngineer() {
   }
 
   function addIntern() {
+    console.log(chalk.cyan("==========="));
+    console.log(chalk.cyan("   Intern  "));
+    console.log(chalk.cyan("==========="));
     inquirer.prompt([
       
       {

@@ -5,7 +5,7 @@ describe("Intern", () => {
         it("should have properties 'name', 'id', 'email' and 'school' with values set to the parameters passing to the constructor.", () => {
             // data setup
             const name = "Shikamaru";
-            const id = 0922;
+            const id = 922;
             const email = "shikamaru@gmail.com";
             const school = "UCSD";
             // create the case
@@ -21,7 +21,7 @@ describe("Intern", () => {
         it("should return the value of the property 'name'", () => {
             // data setup
             const name = "Shikamaru";
-            const id = 0922;
+            const id = 922;
             const email = "shikamaru@gmail.com";
             const school = "UCSD";
             // create the case
@@ -35,7 +35,7 @@ describe("Intern", () => {
         it("should return the value of the property 'id'", () => {
             // data setup
             const name = "Shikamaru";
-            const id = 0922;
+            const id = 922;
             const email = "shikamaru@gmail.com";
             const school = "UCSD";
             // create the case
@@ -49,7 +49,7 @@ describe("Intern", () => {
         it("should return the value of the property 'email'", () => {
             // data setup
             const name = "Shikamaru";
-            const id = 0922;
+            const id = 922;
             const email = "shikamaru@gmail.com";
             const school = "UCSD";
             // create the case
@@ -63,7 +63,7 @@ describe("Intern", () => {
         it("should return the value of the property 'school'", () => {
             // data setup
             const name = "Shikamaru";
-            const id = 0922;
+            const id = 922;
             const email = "shikamaru@gmail.com";
             const school = "UCSD";
             // create the case
@@ -77,7 +77,7 @@ describe("Intern", () => {
         it("should return 'Intern'", () => {
             // data setup
             const name = "Shikamaru";
-            const id = 0922;
+            const id = 922;
             const email = "shikamaru@gmail.com";
             const school = "UCSD";
             // create the case

@@ -6,7 +6,7 @@ describe("Employee", () => {
             // data setup
 
             const name = "Kakashi";
-            const id = 0915;
+            const id = 915;
             const email = "kakashi@gmail.com";
 
             // create the case
@@ -23,7 +23,7 @@ describe("Employee", () => {
 
             // data setup
             const name = "Kakashi";
-            const id = 0915;
+            const id = 915;
             const email = "kakashi@gmail.com";
 
             // create the case
@@ -39,7 +39,7 @@ describe("Employee", () => {
 
             // data setup
             const name = "Kakashi";
-            const id = 0915;
+            const id = 915;
             const email = "kakashi@gmail.com";
 
             // create the case
@@ -55,7 +55,7 @@ describe("Employee", () => {
 
             // data setup
             const name = "Kakashi";
-            const id = 0915;
+            const id = 915;
             const email = "kakashi@gmail.com";
 
             // create the case
@@ -71,7 +71,7 @@ describe("Employee", () => {
 
             // data setup
             const name = "Kakashi";
-            const id = 0915;
+            const id = 915;
             const email = "kakashi@gmail.com";
 
             // create the case
