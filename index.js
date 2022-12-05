@@ -7,7 +7,7 @@ const fs = require("fs");
 const DIST_DIR = path.resolve(__dirname, "dist");
 const distPath = path.join(DIST_DIR, "team.html");
 const generateTeam = require("./src/template.js")
-
+const chalk = require("chalk");
 teamArray = [];
 
 
@@ -170,3 +170,42 @@ runApp();
 
 
 
+function validateRequired(name) {
+  // reject for empty string
+  if (name.trim().length <= 0) {
+      console.log(chalk.red("\nCannot be blank!"))
+      return false;
+  }
+  return true;
+}
+
+function validateRequiredNumber(id) {
+  // reject for empty string
+  if (id.trim().length <= 0) {
+      console.log(chalk.red("\nCannot be blank!"))
+      return false;
+  }
+  // reject for non-number
+  if (isNaN(id.trim())) {
+      console.log(chalk.red("\nMust be a number!"))
+      return false
+  }
+  return true;
+}
+
+function validateRequiredEmail(email)
+{
+var emailformat = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+  // reject for empty string
+  if (email.trim().length <= 0) {
+      console.log(chalk.red("\nCannot be blank!"))
+      return false;
+  }
+  // reject for invalid email address format
+  if(emailformat.test(email.trim())) {
+      return true;
+  } else {
+  console.log(chalk.red("\nThis is not a valid email address"));
+  return false;
+  }
+}
