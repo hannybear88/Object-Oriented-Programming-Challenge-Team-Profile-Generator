@@ -14,15 +14,15 @@
 
 
 :root {
-    --lightest: white;
-    --lighter: #F0EAD2;
-    --light: #DDE5B6;
-    --medium: #A98467;
+    --lightest: rgb(192, 157, 217);
+    --lighter: #dfd2f0;
+    --light: #b592bc;
+    --medium: #8667a9;
     --dark: #777777;
     --darker: #111111;
     --darkest: #000000;
-    --bright: #ADC178;
-    --primary: #6C584C;
+    --bright: #6b5d8a;
+    --primary: #453846;
 }
 
 header {
