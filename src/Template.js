@@ -1,8 +1,10 @@
+const chalk = require("chalk");
 // create the team
 const generateTeam = team => {
 
     // create the manager html
-    const generateManager = manager => {
+    const generateManager = manager => { 
+        console.log(chalk.yellow('Rendering Manager☕️ ...'));
         return `
 <div class="card employee-card">
     <div class="card-header bg-primary text-white">
@@ -22,6 +24,7 @@ const generateTeam = team => {
 
     // create the html for engineers
     const generateEngineer = engineer => {
+         console.log(chalk.blue('Rendering Engineer💻 ...'));
         return `
 <div class="card employee-card">
     <div class="card-header bg-primary text-white">
@@ -41,6 +44,7 @@ const generateTeam = team => {
 
     // create the html for interns
     const generateIntern = intern => {
+          console.log(chalk.magenta('Rendering Intern🎓 ...'));
         return `
 <div class="card employee-card">
     <div class="card-header bg-primary text-white">
