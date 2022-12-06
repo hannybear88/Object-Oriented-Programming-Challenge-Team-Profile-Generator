@@ -131,9 +131,9 @@ function addEngineer() {
   }
 
   function addIntern() {
-    console.log(chalk.cyan("==========="));
-    console.log(chalk.cyan("   Intern  "));
-    console.log(chalk.cyan("==========="));
+    console.log(chalk.magenta("==========="));
+    console.log(chalk.magenta("   Intern  "));
+    console.log(chalk.magenta("==========="));
     inquirer.prompt([
       
       {
@@ -200,7 +200,7 @@ runApp();
 function validateRequired(name) {
   // reject for empty string
   if (name.trim().length <= 0) {
-      console.log(chalk.red("\nCannot be blank!"))
+      console.log(chalk.red("\nCannot leave the answer blank!"))
       return false;
   }
   return true;
@@ -209,12 +209,12 @@ function validateRequired(name) {
 function validateRequiredNumber(id) {
   // reject for empty string
   if (id.trim().length <= 0) {
-      console.log(chalk.red("\nCannot be blank!"))
+      console.log(chalk.red("\nCannot leave the answer blank!"))
       return false;
   }
   // reject for non-number
   if (isNaN(id.trim())) {
-      console.log(chalk.red("\nMust be a number!"))
+      console.log(chalk.red("\nA number must be entered!"))
       return false
   }
   return true;
@@ -225,14 +225,14 @@ function validateRequiredEmail(email)
 var emailformat = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
   // reject for empty string
   if (email.trim().length <= 0) {
-      console.log(chalk.red("\nCannot be blank!"))
+      console.log(chalk.red("\nCannot leave the answer blank!"))
       return false;
   }
   // reject for invalid email address format
   if(emailformat.test(email.trim())) {
       return true;
   } else {
-  console.log(chalk.red("\nThis is not a valid email address"));
+  console.log(chalk.red("\nThis is not a valid email address!"));
   return false;
   }
 }
