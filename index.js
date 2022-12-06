@@ -181,7 +181,7 @@ function addEngineer() {
 
 
 function htmlBuilder () {
-    console.log("Team created!")
+    console.log("The HTML has successfully been created in the ./dist/ folder!!!!!")
 
     fs.writeFileSync(distPath, generateTeam(teamArray), "UTF-8")
 
