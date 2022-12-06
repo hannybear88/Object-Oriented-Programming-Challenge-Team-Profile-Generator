@@ -8,7 +8,7 @@ const generateTeam = team => {
         return `
 <div class="card employee-card">
     <div class="card-header">
-        <h2 class="card-title">${manager.getName()}</h2>
+        <h2 class="card-title">☕️${manager.getName()}</h2>
         <h3 class="card-title"></i>${manager.getRole()}</h3>
     </div>
     <div class="card-body">
@@ -97,7 +97,7 @@ module.exports = team => {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c502137733.js"></script>
+   
 </head>
 <body>
     <div class="container-fluid">

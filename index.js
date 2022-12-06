@@ -18,30 +18,37 @@ function runApp () {
   console.log(chalk.green("* Welcome to the Team Profile Generator! *"));
   console.log(chalk.green("******************************************"));
   console.log(chalk.green("Let's go ahead and build your team!:"));
+  
   //create team 
   function createTeam () {
-    inquirer.prompt([{
-      type: "list",
-      message: "What type of employee would you like to add to your team?",
-      name: "addEmployeePrompt",
-      choices: ["Manager", "Engineer", "Intern", "No more team members are needed."]
-    }]).then(function (userInput) {
-      switch(userInput.addEmployeePrompt) {
-        case "Manager":
-          addManager();
-          break;
-        case "Engineer":
-          addEngineer();
-          break;
-        case "Intern":
-          addIntern();
-          break;
-
-        default:
-          htmlBuilder();
-      }
-    })
+    addManager()
+    .then(
+      inquirer.prompt(
+        [
+          { type: "list",
+            message: "What type of employee would you like to add to your team?",
+            name: "addEmployeePrompt",
+            choices: ["Engineer", "Intern", "No more team members are needed."]
+          }
+        ])
+        .then(function (userInput) {
+          switch(userInput.addEmployeePrompt) {
+            // case "Manager":
+            //   addManager();
+            //   break;
+            case "Engineer":
+              addEngineer();
+              break;
+            case "Intern":
+              addIntern();
+              break;
+            default:
+              htmlBuilder();
+          }
+        })
+    )
   }
+
 // OOP Functions
 
 function addManager() {
