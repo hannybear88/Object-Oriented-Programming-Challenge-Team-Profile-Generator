@@ -62,22 +62,27 @@ Even though it was challenging, I had successfully had all the jest tests to pas
 ## Demo 
 
 Walkthrough Video
-Please [click here]<!--(https://youtube.com)--> for a walkthrough on the details on how to use this application.
+Please [click here](https://youtu.be/3wZgLDKN3d8) for a walkthrough video that demonstrates its functionality and all of its tests passing.
 
 Screenshots
 
 Sample Prompts and Answers Screenshot 
-<!-- ![Prompts and Answers](./assets/images/10-object-oriented-programming-homework-demo.png) -->
+![Prompts and Answers](./assets/images/prompts_and_answers_on_command_line_screenshot_1.png) 
+![Prompts and Answers](./assets/images/prompts_and_answers_on_command_line_screenshot_2.png)
+
+All Tests Passed Screenshot
+![All Tests Passed](./assets/images/all_tests_pass_screenshot_1.png) 
+![All Tests Passed](./assets/images/all_tests_pass_screenshot_2.png)
 
 Sample Generated HTML Screenshot
-<!-- ![generated HTML](./assets/images/10-object-oriented-programming-homework-demo.png) -->
+![generated HTML](./assets/images/My_Team_Generated_HTML_Screenshot.png)
 
 ## Support
-
+If you need support or have any questions about the repo, please [open an issue](https://github.com/hannybear88/Node.js-Challenge-Professional-README-Generator/issues) or contact me via email at hannahkchung88@gmail.com. You can find more of my work on my GitHub, [hannybear88](https://github.com/hannybear88/).
 
 
 ## Credits
-Code by Hannah Chung
+Hannah Chung
 
 
 
