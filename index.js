@@ -21,8 +21,7 @@ function runApp () {
   
   //create team 
   function createTeam () {
-    addManager()
-    .then(
+   
       inquirer.prompt(
         [
           { type: "list",
@@ -46,7 +45,6 @@ function runApp () {
               htmlBuilder();
           }
         })
-    )
   }
 
 // OOP Functions
@@ -194,11 +192,16 @@ function htmlBuilder () {
 
 }
 
-createTeam();
+function teambuilder () {
+  addManager()
+  .then(createTeam());
+}
+teambuilder();
 
 }
 
 runApp();
+
 
 
 
