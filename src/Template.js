@@ -8,8 +8,8 @@ const generateTeam = team => {
         return `
 <div class="card employee-card">
     <div class="card-header">
-        <h2 class="card-title">☕️${manager.getName()}</h2>
-        <h3 class="card-title"></i>${manager.getRole()}</h3>
+        <h2 class="card-title">${manager.getName()}</h2>
+        <h3 class="card-title"></i>☕️${manager.getRole()}</h3>
     </div>
     <div class="card-body">
         <ul class="list-group">
@@ -24,12 +24,12 @@ const generateTeam = team => {
 
     // create the html for engineers
     const generateEngineer = engineer => {
-         console.log(chalk.blue('Rendering Engineer💻 ...'));
+        console.log(chalk.blue('Rendering Engineer💻 ...'));
         return `
 <div class="card employee-card">
     <div class="card-header">
-        <h2 class="card-title">💻${engineer.getName()}</h2>
-        <h3 class="card-title"></i>${engineer.getRole()}</h3>
+        <h2 class="card-title">${engineer.getName()}</h2>
+        <h3 class="card-title"></i>💻${engineer.getRole()}</h3>
     </div>
     <div class="card-body">
         <ul class="list-group">
@@ -48,8 +48,8 @@ const generateTeam = team => {
         return `
 <div class="card employee-card">
     <div class="card-header">
-        <h2 class="card-title">🎓${intern.getName()}</h2>
-        <h3 class="card-title"></i>${intern.getRole()}</h3>
+        <h2 class="card-title">${intern.getName()}</h2>
+        <h3 class="card-title"></i>🎓${intern.getRole()}</h3>
     </div>
     <div class="card-body">
         <ul class="list-group">

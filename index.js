@@ -12,7 +12,7 @@ const chalk = require("chalk");
 teamArray = [];
 
 
-
+// function runApp
 function runApp () {
   console.log(chalk.green("******************************************"));
   console.log(chalk.green("* Welcome to the Team Profile Generator! *"));
@@ -186,6 +186,7 @@ function addEngineer() {
 
 
 function htmlBuilder () {
+    
     console.log(chalk.red("The HTML has successfully been created in the ./dist/ folder!!!!!"));
 
     fs.writeFileSync(distPath, generateTeam(teamArray), "UTF-8")
@@ -193,15 +194,6 @@ function htmlBuilder () {
 }
 
 addManager();
-
-// function teambuilder () {
-//   addManager()
-//   .then(createTeam());
-// }
-// teambuilder();
-
-// }
-
 
 
 function validateRequired(name) {

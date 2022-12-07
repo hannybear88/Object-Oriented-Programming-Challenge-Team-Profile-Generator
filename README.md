@@ -2,8 +2,7 @@
 HW CHALLENGE #10
 
 ## Description
-<!--description here -->
-
+For this assignment, it was focused on Object Oriented Programming and unit testing. For this project we had to build a Node.js command-line application that takes in information about a software engineering team and with that information generates an HTML webpage based on a user's input. Per a requirement we had to make use of Constructors and Class to create the employee objects. These classes includes: Employee, Manager, Engineers, and Interns. This was a fun yet challenging assignment. We also were required to make sure that the all the tests passed which they did. As we get further into the course, the material is getting more and more challenging. I enjoyed building the application and putting my own style to it and making it look different from the demo. My motivation for this assignment is to continue to improve on my knowledge with web development. 
 
 ## Table of Contents
 * [Installation](#installation)
@@ -53,11 +52,11 @@ IF you would like to use this application, open the command-line, make sure you 
 - THEN I exit the application, and the HTML is generated
 
 ## Challenges
-
+The challenges I came across was figuring out why I was getting error messages when trying to get my app work. I was also having issues having all the jest tests to pass. After awhile I was able to figure out what the issues were and got it work. I also realized I had started off my code incorrectly on how the app starts. I had it start off with a list of choices instead of startign off with the questions for the manager. Again, after awhile I had the app running correctly. 
 
 
 ## Success
-
+Even though it was challenging, I had successfully had all the jest tests to pass and successfully had the app run. 
 
 
 ## Demo 
