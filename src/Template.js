@@ -28,7 +28,7 @@ const generateTeam = team => {
         return `
 <div class="card employee-card">
     <div class="card-header">
-        <h2 class="card-title">${engineer.getName()}</h2>
+        <h2 class="card-title">💻${engineer.getName()}</h2>
         <h3 class="card-title"></i>${engineer.getRole()}</h3>
     </div>
     <div class="card-body">
@@ -48,7 +48,7 @@ const generateTeam = team => {
         return `
 <div class="card employee-card">
     <div class="card-header">
-        <h2 class="card-title">${intern.getName()}</h2>
+        <h2 class="card-title">🎓${intern.getName()}</h2>
         <h3 class="card-title"></i>${intern.getRole()}</h3>
     </div>
     <div class="card-body">
