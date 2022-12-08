@@ -62,6 +62,7 @@ Even though it was challenging, I had successfully had all the jest tests to pas
 ## Demo 
 
 Walkthrough Video
+
 Please [click here](https://youtu.be/3wZgLDKN3d8) for a walkthrough video that demonstrates its functionality and all of its tests passing.
 
 Screenshots
